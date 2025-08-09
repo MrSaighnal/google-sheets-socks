@@ -58,4 +58,12 @@ go build -o goproxy ./goproxy.go
 5. Deploy the server and the goproxy binaries on the target machine and run it
 6. Run the client on the attacker machine
 7. configure proxychains to connect by using Socks5 protocol on port 9191
-8. Use your favourite tool via proxychains 
+8. Use your favourite tool via proxychains
+
+# 🏴 Presented at DEF CON 33  
+
+## RATs & Socks abusing Google Service  
+### Google Calendar RAT: Infrastructure-less Command & Control and GSSocks  
+
+[![DEF CON 33](https://img.shields.io/badge/DEF%20CON-33-black?style=flat-square&logo=protonmail&logoColor=white)](https://defcon.org/)  
+*Originally showcased live at DEF CON 33, demonstrating covert C2 and SOCKS proxying over Google Services.*
