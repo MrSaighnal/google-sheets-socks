@@ -69,3 +69,10 @@ go build -o goproxy ./goproxy.go
 
 [![DEF CON 33](https://img.shields.io/badge/DEF%20CON-33-black?style=flat-square&logo=protonmail&logoColor=white)](https://defcon.org/)  
 *Originally showcased live at DEF CON 33, demonstrating covert C2 and SOCKS proxying over Google Services.*
+
+Disclaimer and notes
+GSSocks has been made in Italy with ❤️
+
+Please do not use it for illegal purpose. I take no responsibility for the use that will be made of it.
+
+
