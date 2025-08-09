@@ -1,5 +1,7 @@
 <p align="center">
-  <img alt="GSS" src="https://raw.githubusercontent.com/MrSaighnal/google-sheets-socks/refs/heads/main/images/gssocks.png?token=GHSAT0AAAAAAC26QHV6NCSDRNWLITJGUW4E2EQ67EA" height="200" /><br />
+  <img width="405" height="405" alt="gssocks" src="https://github.com/user-attachments/assets/4debe2bd-c532-43b3-b1ec-2475e9283a5a" height="200" />
+
+ <br />
 <a href="https://twitter.com/mrsaighnal"><img src="https://img.shields.io/twitter/follow/mrsaighnal?style=social" alt="twitter" style="text-align:center;display:block;"></a>
 </p>
 
