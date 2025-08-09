@@ -3,18 +3,18 @@
 <a href="https://twitter.com/mrsaighnal"><img src="https://img.shields.io/twitter/follow/mrsaighnal?style=social" alt="twitter" style="text-align:center;display:block;"></a>
 </p>
 
-# GSS - Google Sheets SOCKS
+# GSSocks - Google Sheets SOCKS
 
-**Google Sheets SOCKS (GSS)** is a Proof-of-Concept (PoC) tool that implements a full **Command & Control (C2)** communication channel using **Google Sheets** as the medium.  
+**Google Sheets SOCKS (GSS)** is a post exploitation tool that implements Socks5 proxy channel using **Google Sheets** as the middle-man.  
 It enables **SOCKS5-like proxying over spreadsheets**, making it a powerful alternative when it’s too risky or impractical to deploy a classic C2 infrastructure.
 
-> ✅ No need for VPS, DNS tunneling, or custom domains – just Google Sheets and a service account.
+> ✅ No need for VPS, DNS tunneling, or custom domains; just Google Sheets and a service account.
 
 ---
 
 ## 🧠 Concept
 
-GSS creates a covert bidirectional communication channel between a **client** (typically running on a target system) and a **server** (controlled by the operator).  
+GSSocks creates a covert communication channel between a **client** (running on the attaccker system) and a **server** (deployed on target system).  
 All traffic is tunneled through Google Sheets in base64-encoded chunks, simulating SOCKS5 behavior internally.
 
 - The client writes data to the sheet using a connection ID and a role tag (`client`).
@@ -42,21 +42,20 @@ _Coming soon..._
 
 ---
 
-## 📋 Requirements
-
-- A Google Cloud project with **Sheets API enabled**
-- At least one **Service Account** with access to the target spreadsheet
-- A Google Sheet named `"Foglio1"` (default) with columns A–H
-- Basic Go environment (`go 1.18+`)
-
----
 
 ## 🚀 Usage
 
 1. Create a Google Sheet and share it with the Service Account email.
-2. Place the service account JSON inside the `rawCredentials` array.
-3. Build the tools:
+2. Place the Google Sheet ID inside the client and server files
+3. Place the service account JSON inside the `rawCredentials` array.
+4. Build the tools:
 
 ```bash
 go build -o client ./client.go
 go build -o server ./server.go
+go build -o goproxy ./goproxy.go
+```
+5. Deploy the server and the goproxy binaries on the target machine and run it
+6. Run the client on the attacker machine
+7. configure proxychains to connect by using Socks5 protocol on port 9191
+8. Use your favourite tool via proxychains 
