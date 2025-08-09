@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="405" height="405" alt="gssocks" src="https://github.com/user-attachments/assets/4debe2bd-c532-43b3-b1ec-2475e9283a5a" height="200" />
+  <img height="405" alt="gssocks" src="https://github.com/user-attachments/assets/4debe2bd-c532-43b3-b1ec-2475e9283a5a" height="200" />
 
  <br />
 <a href="https://twitter.com/mrsaighnal"><img src="https://img.shields.io/twitter/follow/mrsaighnal?style=social" alt="twitter" style="text-align:center;display:block;"></a>
