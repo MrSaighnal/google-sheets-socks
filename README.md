@@ -7,7 +7,7 @@
 
 # GSSocks - Google Sheets SOCKS
 
-**Google Sheets SOCKS (GSS)** is a post exploitation tool that implements Socks5 proxy channel using **Google Sheets** as the middle-man.  
+**Google Sheets SOCKS (GSS)** is a post exploitation tool that implements SOCKS5 proxy channel using **Google Sheets** as the middle-man.  
 It enables **SOCKS5-like proxying over spreadsheets**, making it a powerful alternative when it’s too risky or impractical to deploy a classic C2 infrastructure.
 
 > ✅ No need for VPS, DNS tunneling, or custom domains; just Google Sheets and a service account.
